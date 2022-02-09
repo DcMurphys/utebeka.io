@@ -1,0 +1,164 @@
+import java.util.*;
+public class Utbk {
+    static double pu, pk, pbm, ppu, pilihan, saintek, soshum, utbk;
+    static String nama, domisili;
+    static boolean PLAY = true;
+
+    public static void countsaintek() {
+        utbk = (pu + pk + pbm + ppu + saintek) / 5;
+        System.out.println("Namamu : " + nama);
+        System.out.println("Domisilimu: " + domisili);
+        System.out.println("Nilai UTBK-mu adalah: " + utbk);
+        if (ppu >= 627 && pk >= 627 && pu >= 627 && saintek >= 630) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Institut Teknologi Bandung (ITB), Sekolah MIPA/Teknik dan Arsitek/Komputer");
+        } else if (ppu >= 600 && pk >= 610 && pu >= 600 && saintek >= 604) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Indonesia, Fakultas MIPA/Teknik/Komputer");
+        } else if (ppu >= 590 && pk >= 590 && pu >= 590 && saintek >= 601) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Institut Teknologi Sepuluh November (ITS)");
+        } else if (ppu >= 576 && pk >= 576 && pu >= 576 && saintek >= 583) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Gadjah Mada, Fakultas MIPA/Teknik/Komputer");
+        } else if (ppu >= 568 && pk >= 568 && pu >= 566 && saintek >= 577) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas IPB");
+        } else if (ppu >= 570 && pk >= 570 && pu >= 570 && saintek >= 575) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Airlangga, Fakultas MIPA/Teknik/Komputer");
+        } else if (ppu >= 569 && pk >= 565 && pu >= 564 && saintek >= 570) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Padjadjaran, Fakultas MIPA/Teknik/Komputer");
+        } else if (ppu >= 555 && pk >= 555 && pu >= 555 && saintek >= 565) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Brawijaya, Fakultas MIPA/Teknik/Komputer");
+        } else if (ppu >= 550 && pk >= 550 && pu >= 550 && saintek >= 563) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Diponegoro, Fakultas MIPA/Teknik/Komputer");
+        } else if (ppu < 550 && pk < 550 && pu < 550 && saintek < 563) {
+            System.out.println("Maaf ya, kamu belum berpeluang mendapatkan kampus PTN impian...");
+        } recommendsaintek();
+    }
+
+    public static void countsaintekkd() {
+        utbk = (pu + pk + pbm + ppu + saintek) / 5;
+        System.out.println("Namamu : " + nama);
+        System.out.println("Domisilimu: " + domisili);
+        System.out.println("Nilai UTBK-mu adalah: " + utbk);
+        if (ppu >= 620 && pk >= 620 && pu >= 620 && saintek >= 630) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Indonesia, Fakultas Kedokteran");
+        } else if (ppu >= 590 && pk >= 590 && pu >= 589 && saintek >= 619) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Gadjah Mada, Fakultas Kedokteran");
+        } else if (ppu >= 584 && pk >= 585 && pu >= 592 && saintek >= 610) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Airlangga, Fakultas Kedokteran");
+        } else if (ppu >= 580 && pk >= 583 && pu >= 591 && saintek >= 606) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Padjadjaran, Fakultas Kedokteran");
+        } else if (ppu >= 584 && pk >= 582 && pu >= 590 && saintek >= 604) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Brawijaya, Fakultas Kedokteran");
+        } else if (ppu >= 580 && pk >= 584 && pu >= 590 && saintek >= 598) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Diponegoro, Fakultas Kedokteran");
+        } else if (ppu < 580 && pk < 584 && pu < 590 & saintek < 598) {
+            System.out.println("Maaf ya, kamu belum berpeluang mendapatkan kampus PTN kedokteran...");
+        } recommendsaintekkd();
+    }
+
+    public static void countsoshum() {
+        utbk = (pu + pk + pbm + ppu + soshum) / 5;
+        System.out.println("Namamu : " + nama);
+        System.out.println("Domisilimu: " + domisili);
+        System.out.println("Nilai UTBK-mu adalah: " + utbk);
+        if (pbm >= 604 && pu >= 600 && soshum >= 610) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Institut Teknologi Bandung (ITB), Sekolah Manajemen dan Bisnis");
+        } else if (pbm >= 580 && pu >= 580 && soshum >= 600) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Indonesia, Fakultas Sosial dan Humaniora/Hukum/Ekonomi");
+        } else if (pbm >= 582 && pu >= 585 && soshum >= 590) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Gadjah Mada, Fakultas Sosial dan Humaniora/Hukum/Ekonomi");
+        } else if (pbm >= 557 && pu >= 560 && soshum >= 564) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Airlangga, Fakultas Sosial dan Humaniora/Hukum/Ekonomi");
+        } else if (pbm >= 550 && pu >= 546 && soshum >= 558) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Padjadjaran, Fakultas Sosial dan Humaniora/Hukum/Ekonomi");
+        } else if (pbm >= 545 && pu >= 545 && soshum >= 555) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Brawijaya, Fakultas Sosial dan Humaniora/Hukum/Ekonomi");
+        } else if (pbm >= 538 && pu >= 538 && soshum >= 540) {
+            System.out.println("Selamat! Kamu berpeluang lolos masuk Universitas Diponegoro, Fakultas Sosial dan Humaniora/Hukum/Ekonomi");
+        } else if (pbm < 538 && pu < 538 & soshum < 540) {
+            System.out.println("Maaf ya, kamu belum berpeluang mendapatkan kampus PTN impian...");
+        } recommendsoshum();
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("=======================utebeka.io=======================");
+        System.out.println("Selamat datang di aplikasi checker UTBK! Tekan apapun untuk melanjutkan.");
+        input.nextLine();
+        input();
+    }
+
+    public static void input() {
+        Scanner input = new Scanner(System.in);
+            System.out.print("Masukkan nama lengkapmu: ");
+            nama = input.next();
+            System.out.print("Masukkan domisilimu: ");
+            domisili = input.next();
+            System.out.print("Masukkan nilai UTBK-mu - Penalaran Umum (skala 1 - 800): ");
+            pu = input.nextInt();
+            System.out.print("Masukkan nilai UTBK-mu - Pengetahuan Kuantitatif (skala 1 - 800): ");
+            pk = input.nextInt();
+            System.out.print("Masukkan nilai UTBK-mu - Pemahaman Bacaan dan Menulis (skala 1 - 800): ");
+            pbm = input.nextInt();
+            System.out.print("Masukkan nilai UTBK-mu - Pengetahuan dan Pemahaman Umum (skala 1 - 800): ");
+            ppu = input.nextInt();
+            System.out.print("Pilih salah satu rumpunmu: ");
+            System.out.println("Tekan 1 untuk Saintek Kedokteran, tekan 2 untuk Saintek non-Kedokteran, atau tekan 3 untuk Soshum");
+            pilihan = input.nextInt();
+            do
+                if (pilihan == 1) {
+                    System.out.print("Masukkan nilai UTBK-mu - Saintek Kedokteran (skala 1 - 800): ");
+                    saintek = input.nextInt();
+                    countsaintekkd();
+                    break;
+                } else if (pilihan == 2) {
+                    System.out.print("Masukkan nilai UTBK-mu - Saintek (skala 1 - 800): ");
+                    saintek = input.nextInt();
+                    countsaintek();
+                    break;
+                } else if (pilihan == 3) {
+                    System.out.print("Masukkan nilai UTBK-mu - Soshum (skala 1 - 800): ");
+                    soshum = input.nextInt();
+                    countsoshum();
+                    break;
+                } else if (pilihan >= 4) {
+                    System.out.print("Angka yang dimasukkan bukan perintah. Ulangi lagi");
+                    input.reset();
+                } while (pilihan < 4);
+        }
+
+    public static void recommendsaintek() {
+        System.out.println("Untuk mencapai PTN impianmu di rumpun Saintek, kamu harus mencapai nilai minimum berikut:");
+        System.out.println("Pengetahuan dan Pemahaman Umum: 550, Penalaran Umum: 550, Pengetahuan Kuantitatif: 550, dan Saintek: 563");
+        System.out.println("Jangan patah semangat, teruslah belajar dengan lebih giat, ya!");
+        System.out.println(" "); mengulang();
+    }
+
+    public static void recommendsaintekkd() {
+        System.out.println("Untuk mencapai PTN impianmu di rumpun Saintek - Kedokteran, kamu harus mencapai nilai minimum berikut:");
+        System.out.println("Pengetahuan dan Penalaran Umum: 580, Penalaran Umum: 584, Pengetahuan Kuantitatif: 590, dan Saintek: 598");
+        System.out.println("Jangan patah semangat, teruslah belajar dengan lebih giat, ya!");
+        System.out.println(" "); mengulang();
+    }
+
+    public static void recommendsoshum() {
+        System.out.println("Untuk mencapai PTN impianmu di rumpun Soshum, kamu harus mencapai nilai minimum berikut:");
+        System.out.println("Pemahaman Bacaan dan Menulis: 538, Penalaran Umum: 538, dan Soshum: 540");
+        System.out.println("Jangan patah semangat, teruslah belajar dengan lebih giat, ya!");
+        System.out.println(" "); mengulang();
+    }
+
+    public static void mengulang() {
+        Scanner scan = new Scanner (System.in);
+        do {
+            System.out.println("Apakah ingin mengulang? Tekan Y untuk bilang YA atau N untuk bilang TIDAK");
+            String YorN = scan.nextLine();
+            if (YorN.equals("Y") || YorN.equals("y")) {
+                PLAY = true;
+                input();
+            } else {
+                PLAY = false;
+            }
+        } while (PLAY == true);
+    }
+}
+
+
