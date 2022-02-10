@@ -89,9 +89,9 @@ public class Utbk {
     public static void input() {
         Scanner input = new Scanner(System.in);
             System.out.print("Masukkan nama lengkapmu: ");
-            nama = input.nextln();
+            nama = input.nextLine();
             System.out.print("Masukkan domisilimu: ");
-            domisili = input.nextln();
+            domisili = input.nextLine();
             System.out.print("Masukkan nilai UTBK-mu - Penalaran Umum (skala 1 - 800): ");
             pu = input.nextInt();
             System.out.print("Masukkan nilai UTBK-mu - Pengetahuan Kuantitatif (skala 1 - 800): ");
